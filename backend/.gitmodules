@@ -1,0 +1,3 @@
+[submodule "Holafly"]
+	path = Holafly
+	url = git@github.com:fboechats/Holafly.git
