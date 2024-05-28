@@ -13,7 +13,7 @@ export type LoginResult = {
 export async function login({ email, password }: LoginProps) {
   try {
     const result = await fetch(
-      'http://localhost:8000/auth/login',
+      `${process.env.BACKEND_URL}/auth/login`,
       {
         method: "POST",
         headers: {
@@ -44,7 +44,7 @@ export type Plans = Array<{
 export async function getPlans(token: string) {
   try {
     const result = await fetch(
-      'http://localhost:8000/plans',
+      `${process.env.BACKEND_URL}/plans`,
       {
         method: "GET",
         headers: {
