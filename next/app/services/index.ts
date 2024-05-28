@@ -13,7 +13,7 @@ export type LoginResult = {
 export async function login({ email, password }: LoginProps) {
   try {
     const result = await fetch(
-      `${process.env.BACKEND_URL}/auth/login`,
+      `${process.env.NEXT_PUBLIC_BACKEND_URL}/auth/login`,
       {
         method: "POST",
         headers: {
@@ -44,7 +44,7 @@ export type Plans = Array<{
 export async function getPlans(token: string) {
   try {
     const result = await fetch(
-      `${process.env.BACKEND_URL}/plans`,
+      `${process.env.NEXT_PUBLIC_BACKEND_URL}/plans`,
       {
         method: "GET",
         headers: {
