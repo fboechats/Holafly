@@ -21,7 +21,7 @@ app.use(
     })
 );
 
-const PORT: number = 8000;
+const PORT = process.env.PORT ?? 8000;
 
 app.listen(PORT, async () => {
     console.log(`Server Fire on http:localhost//${PORT}`);
