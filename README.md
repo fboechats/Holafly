@@ -2,7 +2,7 @@
 
 Holafly challenge
 
-Preview: https://holafly-ha9b-7kepgwgrg-fboechats-projects.vercel.app/plans
+Preview: https://holafly-ha9b-7kepgwgrg-fboechats-projects.vercel.app
 
 ## How to run the App
   ### Install dependencies
